@@ -26,7 +26,7 @@ using DiscUtils.Internal;
 
 namespace DiscUtils.Fat
 {
-    internal sealed class FileName : IEquatable<FileName>
+    public sealed class FileName : IEquatable<FileName>
     {
         private const byte SpaceByte = 0x20;
 

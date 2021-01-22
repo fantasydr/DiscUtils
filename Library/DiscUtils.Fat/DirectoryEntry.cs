@@ -26,7 +26,7 @@ using DiscUtils.Streams;
 
 namespace DiscUtils.Fat
 {
-    internal class DirectoryEntry
+    public class DirectoryEntry
     {
         private readonly FatType _fatVariant;
         private readonly FatFileSystemOptions _options;

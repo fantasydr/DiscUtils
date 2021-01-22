@@ -25,7 +25,7 @@ using DiscUtils.Streams;
 
 namespace DiscUtils.Fat
 {
-    internal class FileAllocationTable
+    public class FileAllocationTable
     {
         private readonly FatBuffer _buffer;
         private readonly ushort _firstFatSector;
@@ -48,7 +48,7 @@ namespace DiscUtils.Fat
             return _buffer.IsFree(val);
         }
 
-        internal bool IsEndOfChain(uint val)
+        public bool IsEndOfChain(uint val)
         {
             return _buffer.IsEndOfChain(val);
         }
@@ -58,7 +58,7 @@ namespace DiscUtils.Fat
             return _buffer.IsBadCluster(val);
         }
 
-        internal uint GetNext(uint cluster)
+        public uint GetNext(uint cluster)
         {
             return _buffer.GetNext(cluster);
         }

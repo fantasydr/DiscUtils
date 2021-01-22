@@ -25,7 +25,7 @@ using System;
 namespace DiscUtils.Fat
 {
     [Flags]
-    internal enum FatAttributes : byte
+    public enum FatAttributes : byte
     {
         ReadOnly = 0x01,
         Hidden = 0x02,
